@@ -6,5 +6,54 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+    "@apexlib/foundation": {
+      "projectType": "library",
+      "root": "projects/apexlib/foundation",
+      "sourceRoot": "projects/apexlib/foundation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/apexlib/foundation/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/apexlib/foundation/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/apexlib/foundation/tsconfig.spec.json"
+          }
+        },
+        "serve": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "@apexlib/foundation:build",
+            "compodoc": false,
+            "port": 4242
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/apexlib/foundation/.storybook",
+            "browserTarget": "@apexlib/foundation:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/apexlib/foundation"
+            ],
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
   }
 }
