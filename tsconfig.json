@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@apexlib/foundation": [
+        "./dist/apexlib/foundation"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -21,5 +26,13 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/apexlib/foundation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/apexlib/foundation/tsconfig.spec.json"
+    }
+  ]
 }
