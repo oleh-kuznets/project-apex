@@ -31,9 +31,8 @@
           }
         },
         "serve": {
-          "builder": "@storybook/angular:start-storybook",
+          "builder": "@analogjs/storybook-angular:start-storybook",
           "options": {
-            "browserTarget": "@apexlib/foundation:build",
             "compodoc": false,
             "port": 4242
           }
