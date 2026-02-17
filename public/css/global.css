@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.sbdocs code {
+	padding: 4px 8px !important;
+	background-color: #d8d8da !important;
+}
+
+.sidebar-header {
+	padding: 0 0 0 4px !important;
+}
+
+.sidebar-header img {
+	max-width: 140px !important;
+}
+
+.sidebar-header button[aria-label='Settings'] {
+	display: none;
+}
+
+.tabbutton div div {
+	background-color: #fff;
+}
+
+#storybook-checklist-widget {
+	display: none;
+}
+
+.sidebar-item button[data-testid='context-menu'] {
+	display: none;
+}
+
+.sidebar-item {
+	svg {
+		color: #002441;
+	}
+}
+
+html > body > div > div > div:nth-child(1) > header > div > div > div > div > div:nth-child(1) > div:nth-child(2) > div,
+html > body > div > div > div:nth-child(1) > header > div > div > div > div > div:nth-child(1) > div:nth-child(2) {
+	display: none;
+	margin: 0;
+}
+
+div > #storybook-checklist-widget {
+	display: none;
+}
+
+.sb-bar {
+	box-shadow: none !important;
+}
+
+.sb-bar button {
+	color: #fff;
+}
+
+.sb-bar button[aria-label='Open in editor'] {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 8px !important;
+	height: 8px !important;
+	background: transparent;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0 !important;
+	background: #002441 !important;
+}

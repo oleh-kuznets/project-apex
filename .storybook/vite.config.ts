@@ -32,6 +32,17 @@ export async function viteConfig(config: UserConfig): Promise<UserConfig> {
     plugins: [
       angular({ jit: true, tsconfig: './.storybook/tsconfig.json' }),
       nodePolyfills({ protocolImports: true }),
+      {
+        name: 'watch-storybook-templates',
+        handleHotUpdate({ file, server }) {
+          const shouldReload =
+            file.endsWith('.html') && file.includes(`${path.sep}projects${path.sep}`);
+
+          if (shouldReload) {
+            server.ws.send({ type: 'full-reload', path: '*' });
+          }
+        },
+      },
     ],
     resolve: {
       alias: {
