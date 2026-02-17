@@ -27,7 +27,29 @@
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
-            "tsConfig": "projects/apexlib/foundation/tsconfig.spec.json"
+            "tsConfig": "projects/apexlib/foundation/tsconfig.spec.json",
+            "coverage": true,
+            "coverageInclude": [
+              "projects/apexlib/foundation/src/lib/**/*.ts"
+            ],
+            "coverageExclude": [
+              "projects/apexlib/foundation/src/lib/**/*.stories.ts",
+              "projects/apexlib/foundation/src/lib/**/*.model.ts",
+              "projects/apexlib/foundation/src/lib/**/*.enums.ts"
+            ],
+            "coverageWatermarks": {
+              "lines": [70, 80],
+              "functions": [70, 80],
+              "branches": [70, 80],
+              "statements": [70, 80]
+            },
+            "coverageThresholds": {
+              "lines": 80,
+              "functions": 80,
+              "branches": 80,
+              "statements": 80
+            },
+            "coverageReporters": ["text-summary", "html"]
           }
         },
         "serve": {
