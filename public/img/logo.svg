@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="756.8504" height="283.4646" viewBox="0 0 756.8504 283.4646">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(1,0,0,-1,0,283.4646)" d="M0 .5045754H755V283.46458H0Z"/>
+</clipPath>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,0,283.4646)" d="M0 .4645691H755V283.46458H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_0)">
+<path transform="matrix(1,0,0,-1,0,283.4646)" d="M0 283.4646H755V.5045754H0Z" fill="none"/>
+</g>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(1,0,0,-1,0,283.4646)" d="M0 283.4646H755V.4645836H0Z" fill="none"/>
+<path transform="matrix(1,0,0,-1,0,283.4646)" d="M23.72255 250.8733C23.72255 253.3315 25.71618 255.3243 28.17544 255.3243H287.6932C290.1524 255.3243 292.146 253.3315 292.146 250.8733V31.75562C292.146 29.29744 290.1524 27.3047 287.6932 27.3047H28.17544C25.71618 27.3047 23.72255 29.29744 23.72255 31.75562Z" fill="#0e416c" fill-rule="evenodd"/>
+<text fill="#0e416c" xml:space="preserve" transform="matrix(.24 0 -0 .239894 241.2696 512.9951)" font-size="962.4999" font-family="Arial" font-weight="bold"><tspan y="-1179" x="0 641.02499 1282.0499">PEX</tspan></text>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(.24 0 -0 .239894 71.26364 512.2751)" font-size="962.4999" font-family="Arial" font-weight="bold"><tspan y="-1179" x="0">A</tspan></text>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(.24 0 -0 .239894 243.1048 512.9951)" font-size="962.4999" font-family="Arial" font-weight="bold"><tspan y="-1179" x="0">I</tspan></text>
+<text fill="#0e416c" xml:space="preserve" transform="matrix(.24 0 -0 .239894 686.5381 538.4351)" font-size="100" font-family="Arial" font-weight="bold"><tspan y="-1179" x="0">&#x00ae;</tspan></text>
+</g>
+</svg>
